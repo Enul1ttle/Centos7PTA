@@ -9,7 +9,7 @@
 - 必备组件：net-tools wget bzip texlive alien guntls-utils git pip httpd zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make
 - 必备环境：python3 pip3 jdk 1.8
 - 信息收集：whois wafw00f whatweb nmap snitch GitMiner ReconDog subDomainsBrute Sublist3r
-- 漏洞扫描：Nilto openvas Arachni w3af diesearch  XSStrike CMSeek sqliv 
+- 漏洞扫描：Nilto openvas Arachni w3af dirsearch  XSStrike CMSeek sqliv 
 - 漏洞利用 metasploit sqlmap
 - 模糊测试：WAFNinja Wfuzz
 - 后渗透工具：nc frp cobaltstrike
