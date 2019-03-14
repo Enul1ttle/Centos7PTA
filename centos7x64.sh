@@ -44,6 +44,8 @@ cd /opt/tools/
 wget https://github.com/fatedier/frp/releases/download/v0.24.1/frp_0.24.1_linux_amd64.tar.gz
 tar -zxvf frp_0.24.1_linux_amd64.tar.gz
 rm -rf frp_0.24.1_linux_amd64.tar.gz
+echo "alias frps='cd /opt/tools/frp_0.24.1_linux_amd64 && ./frps -c ./frps.ini'" >> ~/.bashrc
+source ~/.bashrc
 #Nikto 
 git clone https://github.com/sullo/nikto
 echo "alias nikto='cd /opt/tools/nikto/program &&./nikto.pl'" >> ~/.bashrc 
@@ -102,6 +104,11 @@ git clone https://github.com/s0md3v/XSStrike
 pip install --upgrade pip
 pip3 install --upgrade pip
 pip3 install selenium requests tld fuzzywuzzy
+wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz
+tar zxvf geckodriver-v0.24.0-linux64.tar.gz
+mv geckodriver /usr/local/bin/
+rm -rf geckodriver-v0.24.0-linux64.tar.gz
+yum -y install firefox
 echo "alias xsstrike='cd /opt/tools/XSStrike && python3 xsstrike.py'" >> ~/.bashrc
 echo "[+] Installing XSStrike "
 #CMSeeK
@@ -141,13 +148,15 @@ source ~/.bashrc
 echo "[+] Installing ReconDog"
 
 #cobalt strike
+cd /opt/tools/
 yum install -y java-1.8.0-openjdk unzip
 service iptables stop
-#upload Cobaltstrike.zip to /opt/tools/
-#unzip cobltstrike.zip
-#cd cobaltstrike && chmod +x teamserver
+wget http://file.hackersb.cn/tools/cobaltstrike.zip && unzip cobaltstrike.zip
+rm -rf cobaltstrike.zip
+cd cobaltstrike && chmod +x teamserver
+systemctl stop firewalld.service
 echo "alias cs='cd /opt/tools/cobaltstrike && ./teamserver'" >> ~/.bashrc 
-echo "[+] Installing jdk 1.8 unzip and stop iptables"
+echo "[+] Installing cobalt strike and stop iptables"
 source ~/.bashrc
 #metasploit
 cd /opt/tools/
