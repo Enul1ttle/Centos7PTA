@@ -26,5 +26,5 @@
 - frp 还没配置frps.ini，请设置好后自行添加快速启动 `echo "alias frps='cd /opt/tools/frp_0.24.1_linux_amd64 && ./frps -c ./frps.ini'" >> ~/.bashrc`
 - Cobalt strike 需要自行压缩成zip，并把文件上传到 /opt/tools/ 后输入`unzip cobaltstrike.zip && rm -rf cobaltstrike.zip`。使用方法`cs VPSip password`
 - metasploit与openvas 未实现全自动化，需要手动确认
-
+- 可能会遇到`AttributeError: 'X509' object has no attribute '_x509'`,解决方法`pip uninstall pyOpenSSL cryptography``pip install pyOpenSSL cryptography`重新安装py0penSSL cryptograhy
 
