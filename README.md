@@ -12,7 +12,7 @@
 - 漏洞扫描：Nilto openvas Arachni w3af diesearch  XSStrike CMSeek sqliv 
 - 漏洞利用 metasploit sqlmap
 - 模糊测试：WAFNinja Wfuzz
-- 后渗透工具：nc frp 
+- 后渗透工具：nc frp cobaltstrike
 ### 0x03 代码介绍
 `echo "alias xsstrike='cd /opt/tools/XSStrike && python3 xsstrike.py'" >> ~/.bashrc`
 #把`cd /opt/tools/XSStrike && python3 xsstrike.py`添加到 /root/.bashrc。
@@ -23,8 +23,8 @@
 - service httpd start 快速搭建http服务器
 - arachni 默认的账号:`admin@admin.admin` 密码：`administrator`
 ### 0x05 一些问题
-- frp 还没配置frps.ini，请设置好后自行添加快速启动 `echo "alias frps='cd /opt/tools/frp_0.24.1_linux_amd64 && ./frps -c ./frps.ini'" >> ~/.bashrc`
-- Cobalt strike 需要自行压缩成zip，并把文件上传到 /opt/tools/ 后输入`unzip cobaltstrike.zip && rm -rf cobaltstrike.zip`。使用方法`cs VPSip password`
+- 如果没有发现此命令，就执行`source ~/.bashrc` 更新一下快速启动的命令
+- Cobalt strike 是在网上乱找的版本http://file.hackersb.cn/tools/cobaltstrike.zip 仅为测试功能完整性。请自行替换掉里面的文件
 - metasploit与openvas 未实现全自动化，需要手动确认
 - 可能会遇到`AttributeError: 'X509' object has no attribute '_x509'`,解决方法`pip uninstall pyOpenSSL cryptography``pip install pyOpenSSL cryptography`重新安装py0penSSL cryptograhy
 ### 0x05 渗透工具的介绍与简单使用
