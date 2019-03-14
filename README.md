@@ -27,4 +27,5 @@
 - Cobalt strike 需要自行压缩成zip，并把文件上传到 /opt/tools/ 后输入`unzip cobaltstrike.zip && rm -rf cobaltstrike.zip`。使用方法`cs VPSip password`
 - metasploit与openvas 未实现全自动化，需要手动确认
 - 可能会遇到`AttributeError: 'X509' object has no attribute '_x509'`,解决方法`pip uninstall pyOpenSSL cryptography``pip install pyOpenSSL cryptography`重新安装py0penSSL cryptograhy
-
+### 0x05 渗透工具的介绍与简单使用
+https://enul1ttle.github.io/2019/03/14/Centos7%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%89%E8%A3%85/
