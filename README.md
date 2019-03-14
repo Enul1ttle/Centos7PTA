@@ -27,5 +27,4 @@
 - Cobalt strike 需要自行压缩成zip，并把文件上传到 /opt/tools/ 后输入`unzip cobaltstrike.zip && rm -rf cobaltstrike.zip`。使用方法`cs VPSip password`
 - metasploit与openvas 未实现全自动化，需要手动确认
 
-### 详细的工具使用与介绍
-未完待续。。。
+
