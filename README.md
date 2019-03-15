@@ -12,6 +12,7 @@
 - 漏洞扫描：Nilto openvas Arachni w3af dirsearch  XSStrike CMSeek sqliv 
 - 漏洞利用 metasploit sqlmap
 - 模糊测试：WAFNinja Wfuzz
+- 暴力破解：
 - 后渗透工具：nc frp cobaltstrike
 ### 0x03 代码介绍
 `echo "alias xsstrike='cd /opt/tools/XSStrike && python3 xsstrike.py'" >> ~/.bashrc`
