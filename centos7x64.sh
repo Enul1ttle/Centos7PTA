@@ -134,6 +134,11 @@ echo "[+] Installing WAFNinja "
 #Wfuzz
 pip install wfuzz
 echo "[+] Installing Wfuzz "
+#Cupp
+cd /opt/tools/
+git clone https://github.com/Mebus/cupp
+echo "alias cupp='cd /opt/tools/cupp && python cupp.py'" >> ~/.bashrc
+echo "[+] Installing cupp "
 #GitMiner
 cd /opt/tools
 git clone http://github.com/UnkL4b/GitMiner
