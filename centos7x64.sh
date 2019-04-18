@@ -98,7 +98,16 @@ echo "[+] Installing xwaf"
 #tor
 yum install -y tor
 echo "[+] Installing tor"
+#proxychains
+cd /opt/tools
+yum -y install gcc automake autoconf libtool make
+git clone https://github.com/rofl0r/proxychains-ng.git
+cd proxychains-ng && ./configure
+make && sudo make install
+cp ./src/proxychains.conf /etc/proxychains.conf
+cd .. && rm -rf proxychains-ng
 #hrdra
+cd /opt/tools
 yum install -y openssl-devel pcre-devel ncpfs-devel postgresql-devel libssh-devel subversion-devel hydra.x86_64
 echo "[+] Installing hydra"
 #nmap
