@@ -30,3 +30,15 @@
 - 可能会遇到`AttributeError: 'X509' object has no attribute '_x509'`,解决方法`pip uninstall pyOpenSSL cryptography``pip install pyOpenSSL cryptography`重新安装py0penSSL cryptograhy
 ### 0x05 渗透工具的介绍与简单使用
 https://enul1ttle.github.io/2019/03/14/Centos7%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%89%E8%A3%85/
+### 0x06 2019/4/18 更新bypass_waf+tor+proxychains
+#### xwaf
+bypass_waf项目地址：https://github.com/3xp10it/bypass_waf
+快速启动命令为xwaf，全自动配合sqlmap绕waf,测试了一下虽然时间很久，但确实能绕。配合tor一起使用，很舒服
+#### tor
+tor需要配置才能使用
+1.`vi /etc/tor/toorc`  #取消掉24行SOCKSPort 9050的注释
+2. `systemctl restart tor`  #重启tor
+3.`netstat -lnt`   # 查看tor 9050 端口是否已经启动
+#### proxychains 
+默认已经配置好tor的端口了
+也可以自行修改`vi /etc/proxychains.conf`
