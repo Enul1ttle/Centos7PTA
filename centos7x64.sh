@@ -89,6 +89,15 @@ echo "[+] Installing Sublist3r"
 git clone https://github.com/sqlmapproject/sqlmap
 echo "alias sqlmap='cd /opt/tools/sqlmap && python sqlmap.py'" >> ~/.bashrc
 echo "[+] Installing sqlmap"
+#bypass_waf
+cd /opt/tools
+git clone https://github.com/3xp10it/bypass_waf
+yum install -y figlet
+echo "alias xwaf='cd /opt/tools/bypass_waf && python3 xwaf.py'" >> ~/.bashrc
+echo "[+] Installing xwaf"
+#tor
+yum install -y tor
+echo "[+] Installing tor"
 #hrdra
 yum install -y openssl-devel pcre-devel ncpfs-devel postgresql-devel libssh-devel subversion-devel hydra.x86_64
 echo "[+] Installing hydra"
