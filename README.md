@@ -38,11 +38,11 @@ bypass_waf项目地址：https://github.com/3xp10it/bypass_waf
 #### tor
 tor需要配置才能使用
 
-1.`vi /etc/tor/toorc`  #取消掉24行SOCKSPort 9050的注释
+- `vi /etc/tor/toorc`  #取消掉24行SOCKSPort 9050的注释
 
-2. `systemctl restart tor`  #重启tor
+- `systemctl restart tor` #重启tor
 
-3.`netstat -lnt`   # 查看tor 9050 端口是否已经启动
+- `netstat -lnt`   # 查看tor 9050 端口是否已经启动
 #### proxychains 
 默认已经配置好tor的端口了
 
