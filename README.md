@@ -28,9 +28,9 @@
 - Cobalt strike 是在网上乱找的版本http://file.hackersb.cn/tools/cobaltstrike.zip 仅为测试功能完整性。请自行替换掉里面的文件
 - metasploit与openvas 未实现全自动化，需要手动确认
 - 可能会遇到`AttributeError: 'X509' object has no attribute '_x509'`,解决方法`pip uninstall pyOpenSSL cryptography``pip install pyOpenSSL cryptography`重新安装py0penSSL cryptograhy
-### 0x05 渗透工具的介绍与简单使用
+### 0x06 渗透工具的介绍与简单使用
 https://enul1ttle.github.io/2019/03/14/Centos7%E6%B8%97%E9%80%8F%E5%B7%A5%E5%85%B7%E8%87%AA%E5%8A%A8%E5%8C%96%E5%AE%89%E8%A3%85/
-### 0x06 2019/4/18 更新bypass_waf+tor+proxychains
+### 0x07 2019/4/18 更新bypass_waf+tor+proxychains
 #### xwaf
 bypass_waf项目地址：https://github.com/3xp10it/bypass_waf
 
@@ -47,3 +47,7 @@ tor需要配置才能使用
 默认已经配置好tor的端口了
 
 也可以自行修改`vi /etc/proxychains.conf`
+### 0x08 更新theHarvester
+收集目标的邮箱和子域名
+用法：`theHarvester -d baidu.com -l 30 -b all`
+
