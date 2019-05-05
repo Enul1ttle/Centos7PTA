@@ -85,6 +85,13 @@ echo "[+] Installing subDomainsBrute"
 git clone https://github.com/aboul3la/Sublist3r.git
 echo "alias sublist3r='cd /opt/tools/Sublist3r && python sublist3r.py'" >> ~/.bashrc
 echo "[+] Installing Sublist3r"
+#theHarvester
+cd /opt/tools/
+git clone https://github.com/laramies/theHarvester
+cd theHarvester && python3 -m pip install -r requirements.txt
+echo "alias theHarvester='cd /opt/tools/theHarvester && python3 theHarvester.py'" >> ~/.bashrc
+source ~/.bashrc
+echo "[+] Installing theHarvester"
 #sqlmap
 git clone https://github.com/sqlmapproject/sqlmap
 echo "alias sqlmap='cd /opt/tools/sqlmap && python sqlmap.py'" >> ~/.bashrc
