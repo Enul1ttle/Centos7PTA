@@ -28,6 +28,11 @@ echo "[+] Installing net-tools whois nc httpd"
 #whatweb
 git clone https://github.com/urbanadventurer/whatweb
 echo "alias whatweb='cd /opt/tools/whatweb &&./whatweb'" >> ~/.bashrc
+#TideFinger
+cd /opt/tools/
+git clone https://github.com/TideSec/TideFinger
+echo "alias tidefinger='cd /opt/tools/TideFinger && python TideFinger.py '" >> ~/.bashrc
+echo "[+] Installing TideFinger"
 #Pyhton3
 yum install -y zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make
 yum clean all
