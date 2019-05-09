@@ -51,6 +51,8 @@ tor需要配置才能使用
 ### 0x08 更新theHarvester
 收集目标的邮箱和子域名
 用法：`theHarvester -d baidu.com -l 30 -b all`
-### 0x09 2019/5/9  hashid
+### 0x09 2019/5/9  hashid 
 hashID是用Python3写成，它通过正则表达式可识别220多种hash类型
-
+### 0x10 2019/5/9 晚 小雨 TideFinger
+TideFinger，一个开源的指纹识别小工具，使用了传统和现代检测技术相结合的指纹检测方法，让指纹检测更快捷、准确。
+使用：`tidefiger -u http://www.baidu.com`
