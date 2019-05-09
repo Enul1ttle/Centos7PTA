@@ -56,6 +56,7 @@ hashID是用Python3写成，它通过正则表达式可识别220多种hash类型
 ### 0x10 2019/5/9 晚 小雨 TideFinger waf_identify
 TideFinger，一个开源的指纹识别小工具，使用了传统和现代检测技术相结合的指纹检测方法，让指纹检测更快捷、准确。
 使用：`tidefiger -u http://www.baidu.com`
+
 waf_identify,整合4款WAF识别工具SqlMap、waf00f、wafid、DirBrute
 
 `waf http://www.baidu.com`
