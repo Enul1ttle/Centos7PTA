@@ -113,6 +113,9 @@ cd proxychains-ng && ./configure
 make && sudo make install
 cp ./src/proxychains.conf /etc/proxychains.conf
 cd .. && rm -rf proxychains-ng
+#hashid
+pip install hashid
+echo "[+] hashid"
 #hrdra
 cd /opt/tools
 yum install -y openssl-devel pcre-devel ncpfs-devel postgresql-devel libssh-devel subversion-devel hydra.x86_64
