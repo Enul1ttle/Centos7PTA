@@ -8,12 +8,13 @@
 ### 0x02 安装内容
 - 必备组件：net-tools wget bzip texlive alien guntls-utils git pip httpd zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make
 - 必备环境：python3 pip3 jdk 1.8
-- 信息收集：whois wafw00f whatweb nmap snitch GitMiner ReconDog subDomainsBrute Sublist3r
+- 信息收集：whois wafw00f whatweb nmap snitch GitMiner ReconDog subDomainsBrute Sublist3r theHarvester
 - 漏洞扫描：Nilto openvas Arachni w3af dirsearch  XSStrike CMSeek sqliv 
 - 漏洞利用 metasploit sqlmap
-- 模糊测试：WAFNinja Wfuzz
-- 暴力破解：hydra cupp
+- 模糊测试：WAFNinja Wfuzz xwaf
+- 暴力破解：hydra cupp 
 - 后渗透工具：nc frp cobaltstrike
+- 杂：hashid tor proxychains
 ### 0x03 代码介绍
 `echo "alias xsstrike='cd /opt/tools/XSStrike && python3 xsstrike.py'" >> ~/.bashrc`
 #把`cd /opt/tools/XSStrike && python3 xsstrike.py`添加到 /root/.bashrc。
@@ -50,4 +51,6 @@ tor需要配置才能使用
 ### 0x08 更新theHarvester
 收集目标的邮箱和子域名
 用法：`theHarvester -d baidu.com -l 30 -b all`
+### 0x09 2019/5/9  hashid
+hashID是用Python3写成，它通过正则表达式可识别220多种hash类型
 
