@@ -25,6 +25,11 @@ yum clean all
 #wafw00f
 pip install wafw00f
 echo "[+] Installing net-tools whois nc httpd"
+#waf_identify
+cd /opt/tools/
+git clone https://github.com/7z1/waf_identify
+echo "alias whatweb='cd /opt/tools/waf_identify &&python3 waf.py '" >> ~/.bashrc
+echo "[+] Installing waf_identify"
 #whatweb
 git clone https://github.com/urbanadventurer/whatweb
 echo "alias whatweb='cd /opt/tools/whatweb &&./whatweb'" >> ~/.bashrc
