@@ -61,3 +61,14 @@ waf_identify,整合4款WAF识别工具SqlMap、waf00f、wafid、DirBrute
 
 `waf http://www.baidu.com`
 
+### 可能会遇到的问题
+```
+
+ImportError: No module named 'requests.packages.urllib3'
+解决方法：
+pip install requests urllib3 pyOpenSSL --force --upgrade
+pip install --upgrade --force-reinstall 'requests==2.6.0'
+```
+
+
+
